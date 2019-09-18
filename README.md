@@ -17,4 +17,5 @@
 * OpenAPI-Swagger
 
 ## Estado del código
-[Build Status](https://travis-ci.org/fergill/iwvg-ecosystem-fernanda-guerra)
+
+[![Build Status](https://travis-ci.org/fergill/iwvg-ecosystem-fernanda-guerra.svg?branch=develop)](https://travis-ci.org/fergill/iwvg-ecosystem-fernanda-guerra)
