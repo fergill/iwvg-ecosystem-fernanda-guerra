@@ -18,6 +18,14 @@ class PointTest {
     void testPhase() { assertEquals(0.8960, point.phase(), 10e-5); }
 
     @Test
+    void testMovePoint() {
+        this.point.movePoint(new Point(2, 3, 4));
+        assertEquals(6, point.getX());
+        assertEquals(8, point.getY());
+        assertEquals(10, point.getZ());
+    }
+
+    @Test
     void testTranslateOrigin() {
         this.point.translateOrigin(new Point(1, 2, 3));
         assertEquals(3, point.getX());

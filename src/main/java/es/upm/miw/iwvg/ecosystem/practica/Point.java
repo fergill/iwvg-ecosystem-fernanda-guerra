@@ -30,6 +30,12 @@ public class Point {
         return Math.atan((double) this.y / this.x);
     }
 
+    public void movePoint(Point origin) {
+        this.x += origin.getX();
+        this.y += origin.getY();
+        this.z += origin.getZ();
+    }
+
     public void translateOrigin(Point origin) {
         this.x -= origin.getX();
         this.y -= origin.getY();
