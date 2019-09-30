@@ -31,4 +31,12 @@ class FractionTest {
         assertTrue(fraction.isEquivalent(new Fraction(24,4)));
         assertFalse(fraction.isEquivalent(new Fraction(3,5)));
     }
+
+    @Test
+    public void testSumFractions() {
+        Fraction fraction2 = new Fraction(2,4);
+        fraction.sumFractions(fraction2);
+        assertEquals(52, fraction.getNumerator());
+        assertEquals(8, fraction.getDenominator());
+    }
 }

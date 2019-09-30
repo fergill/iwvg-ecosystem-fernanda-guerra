@@ -32,5 +32,12 @@ public class Fraction {
     public boolean isImproper() { return (numerator >= denominator); }
 
     public boolean isEquivalent(Fraction fraction) {
-        return (numerator * fraction.getDenominator() == fraction.getNumerator() * denominator); }
+        return (numerator * fraction.getDenominator() == fraction.getNumerator() * denominator);
+    }
+
+    public void sumFractions(Fraction fraction) {
+        this.numerator = numerator * fraction.getDenominator() + denominator * fraction.getNumerator();
+        this.denominator =  this.denominator * fraction.getDenominator();
+
+    }
 }
