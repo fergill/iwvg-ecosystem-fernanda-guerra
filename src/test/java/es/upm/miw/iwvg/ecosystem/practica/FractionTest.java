@@ -19,4 +19,10 @@ class FractionTest {
 
     @Test
     void testGetDenominator() { assertEquals(2, fraction.getDenominator()); }
+
+    @Test
+    void testIsProper() { assertEquals(false, fraction.isProper()); }
+
+    @Test
+    void testIsImproper() { assertEquals(true, fraction.isImproper()); }
 }

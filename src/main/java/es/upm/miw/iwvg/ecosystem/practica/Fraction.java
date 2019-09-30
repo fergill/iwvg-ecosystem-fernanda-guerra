@@ -26,4 +26,8 @@ public class Fraction {
     public int getDenominator() {
         return denominator;
     }
+
+    public boolean isProper() { return (numerator < denominator); }
+
+    public boolean isImproper() { return (numerator >= denominator); }
 }
