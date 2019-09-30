@@ -43,4 +43,8 @@ public class DecimalCollection {
         return Collections.min(this.collection);
     }
 
+    public double media() {
+        return this.sum() / this.size();
+    }
+
 }

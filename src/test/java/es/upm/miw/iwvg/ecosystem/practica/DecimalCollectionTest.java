@@ -28,4 +28,7 @@ class DecimalCollectionTest {
 
     @Test
     void testLower() { assertEquals(2.45, this.decimalCollection.lower(), 10e-5);}
+
+    @Test
+    void testMedia() { assertEquals(4.08, this.decimalCollection.media(), 10e-5);}
 }
