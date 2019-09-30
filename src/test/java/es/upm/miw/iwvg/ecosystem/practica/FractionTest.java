@@ -3,7 +3,7 @@ package es.upm.miw.iwvg.ecosystem.practica;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 class FractionTest {
     private Fraction fraction;
@@ -25,4 +25,10 @@ class FractionTest {
 
     @Test
     void testIsImproper() { assertEquals(true, fraction.isImproper()); }
+
+    @Test
+    public void testIsEquivalent() {
+        assertTrue(fraction.isEquivalent(new Fraction(24,4)));
+        assertFalse(fraction.isEquivalent(new Fraction(3,5)));
+    }
 }

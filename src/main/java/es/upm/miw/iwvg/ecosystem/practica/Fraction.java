@@ -30,4 +30,7 @@ public class Fraction {
     public boolean isProper() { return (numerator < denominator); }
 
     public boolean isImproper() { return (numerator >= denominator); }
+
+    public boolean isEquivalent(Fraction fraction) {
+        return (numerator * fraction.getDenominator() == fraction.getNumerator() * denominator); }
 }
