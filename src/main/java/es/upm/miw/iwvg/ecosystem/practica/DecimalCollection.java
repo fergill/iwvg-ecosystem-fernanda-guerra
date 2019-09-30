@@ -38,4 +38,9 @@ public class DecimalCollection {
         return Collections.max(this.collection);
     }
 
+    public double lower() {
+        this.validateIsNullOrEmpty();
+        return Collections.min(this.collection);
+    }
+
 }

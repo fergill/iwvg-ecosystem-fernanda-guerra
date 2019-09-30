@@ -25,4 +25,7 @@ class DecimalCollectionTest {
 
     @Test
     void testHigher() { assertEquals(5.69, this.decimalCollection.higher(), 10e-5); }
+
+    @Test
+    void testLower() { assertEquals(2.45, this.decimalCollection.lower(), 10e-5);}
 }
