@@ -30,4 +30,7 @@ public class UserTest {
     @Test
     void testGetNameUpperCase() { assertEquals("FERNANDA", user.getNameUpperCase());}
 
+    @Test
+    void testGetFullNameUpperCase(){ assertEquals("FERNANDA GUERRA", user.getFullNameUpperCase());}
+
 }
